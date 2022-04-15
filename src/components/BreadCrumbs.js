@@ -1,6 +1,6 @@
 import { BreadCrumb, ListItem, Link } from "../shared/Style";
 
-export function BreadCrumbs() {
+export default function BreadCrumbs() {
   return (
     <BreadCrumb>
       <ListItem>

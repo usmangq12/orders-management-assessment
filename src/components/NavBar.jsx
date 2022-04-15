@@ -19,9 +19,9 @@ import {
 } from "../shared/Style";
 import { BsCart3 } from "react-icons/bs";
 import { BsChevronDown } from "react-icons/bs";
-import { BreadCrumbs } from "./BreadCrumbs";
+import { BreadCrumbs } from "../components";
 
-export function NavBar() {
+export default function NavBar() {
   return (
     <Main>
       <Container>
