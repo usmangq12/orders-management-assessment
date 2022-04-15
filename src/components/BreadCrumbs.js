@@ -1,7 +1,7 @@
 import { BreadCrumb, ListItem } from "../shared/Style";
 import { Link } from "react-router-dom";
 
-export function BreadCrumbs() {
+export default function BreadCrumbs() {
   return (
     <BreadCrumb>
       <ListItem>
