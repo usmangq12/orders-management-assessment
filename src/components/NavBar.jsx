@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Main,
   Nav,
@@ -6,9 +7,8 @@ import {
   Linked,
   OrderList,
   NavBarItems,
-  IconList,
+  LogoList,
   Flip,
-  DropDown,
   Section,
   OrderSection,
   Heading,
@@ -16,9 +16,15 @@ import {
   SubSection,
   ButtonSection,
   Box,
+  Width,
+  Oval,
+  Select,
+  Option,
+  Modal,
+  ModalBody,
+  ModalHeader,
 } from "../shared/Style";
 import { BsCart3 } from "react-icons/bs";
-import { BsChevronDown } from "react-icons/bs";
 import { BreadCrumbs } from "./BreadCrumbs";
 
 export function NavBar() {
@@ -28,32 +34,32 @@ export function NavBar() {
         <Nav>
           <NavBarItems>
             <OrderList>
-              <IconList>
-                <Linked>Recco</Linked>
-              </IconList>
+              <LogoList>Recco</LogoList>
               <List>
-                <Linked>Store </Linked>
+                <Linked href="#Store">Store </Linked>
               </List>
               <List>
-                <Linked>Orders</Linked>
+                <Linked href="#Orders">Orders</Linked>
               </List>
               <List>
-                <Linked>Analytics</Linked>
+                <Linked href="#Analytics">Analytics</Linked>
               </List>
             </OrderList>
             <Section>
-              <Flip>
-                <BsCart3 />
-              </Flip>
-              <DropDown>
-                Hello, James
-                <BsChevronDown />
-              </DropDown>
+              <Width>
+                <Oval>27</Oval>
+                <Flip>
+                  <BsCart3 />
+                </Flip>
+              </Width>
+              <Select>
+                <Option value={"Hello, James"}>Hello, James</Option>
+                <Option value={"Logout"}>Logout</Option>
+              </Select>
             </Section>
           </NavBarItems>
         </Nav>
       </Container>
-
       <OrderSection>
         <Container>
           <SubSection>
